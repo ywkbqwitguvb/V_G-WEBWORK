@@ -44,7 +44,7 @@ body {
 /* Header */
 .welcome-text {
     color: #4C9EFF;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 2rem;
@@ -111,6 +111,67 @@ h1 {
     transform: translateY(-2px);
 }
 
+/* Services Section */
+.services {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.services .container {
+    color: #333;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgba(6, 100, 223, 0.705);
+}
+
+.section-description {
+    text-align: center;
+    color: #110f0f;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 9px rgba(6, 100, 223, 0.705);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1.5rem;
+    color: #4C9EFF;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     h1 {
@@ -128,5 +189,17 @@ h1 {
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .services {
+        padding: 3rem 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 1.5rem;
     }
 }

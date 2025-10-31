@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice">
+  <rect width="1200" height="675" fill="#f3f4f6"/>
+  <g fill="#dbe1e8">
+    <rect x="60" y="90" width="1080" height="120" rx="8"/>
+    <rect x="60" y="230" width="1080" height="320" rx="8"/>
+  </g>
+  <text x="600" y="360" font-family="Segoe UI, Roboto, Arial" font-size="36" fill="#7b8794" text-anchor="middle">Corporate Project Placeholder</text>
+</svg>

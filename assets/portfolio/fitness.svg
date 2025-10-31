@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice">
+  <rect width="1200" height="675" fill="#fff6f0"/>
+  <g fill="#ffd6c2">
+    <circle cx="200" cy="200" r="100"/>
+    <rect x="480" y="140" width="440" height="300" rx="12"/>
+  </g>
+  <text x="600" y="360" font-family="Segoe UI, Roboto, Arial" font-size="36" fill="#f06a38" text-anchor="middle">Fitness App Placeholder</text>
+</svg>

@@ -125,7 +125,7 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    color: rgba(6, 100, 223, 0.705);
+    color: #4C9EFF;
 }
 
 .section-description {
@@ -143,7 +143,7 @@ h1 {
 }
 
 .service-card {
-    background: white;
+    background: white
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 9px rgba(6, 100, 223, 0.705);
@@ -170,38 +170,6 @@ h1 {
 .service-card p {
     color: #666;
     line-height: 1.6;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    .description {
-        font-size: 1rem;
-    }
-    
-    .cta-buttons {
-        flex-direction: column;
-    }
-    
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .services {
-        padding: 3rem 1rem;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        padding: 1.5rem;
-    }
 }
 
 /* Portfolio Section */
@@ -292,4 +260,235 @@ h1 {
 .btn-outline:hover {
     background-color: #4C9EFF;
     color: white;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.testimonials .section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(6, 100, 223, 0.10);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.3s;
+    border: 1px solid #ececec;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 8px 24px rgba(6, 100, 223, 0.18);
+}
+
+.stars {
+    color: #4C9EFF;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    color: #222;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-author strong {
+    font-weight: 700;
+    color: #222;
+}
+
+.testimonial-author span {
+    color: #888;
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    background: #fff;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.contact .section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #fafbfc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(6, 100, 223, 0.08);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    border: 1px solid #ececec;
+}
+
+.contact-form-card {
+    grid-column: 1 / 2;
+}
+
+.contact-quick {
+    grid-column: 2 / 3;
+}
+
+.contact-info {
+    grid-column: 3 / 4;
+    background: #f3f8ff;
+    border: 1px solid #dbeafe;
+}
+
+.contact-card h3, .contact-card h4 {
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.contact-sub {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dbeafe;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    color: #222;
+    transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1.5px solid #4C9EFF;
+    outline: none;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+.contact-info h4 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #4C9EFF;
+}
+
+.contact-info p {
+    color: #222;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services {
+        padding: 3rem 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .testimonial-card {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form-card, .contact-quick, .contact-info {
+        grid-column: auto;
+    }
 }

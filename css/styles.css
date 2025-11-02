@@ -100,8 +100,9 @@ h1 {
 }
 
 .btn-primary:hover {
-    background-color: #3b8ae6;
+    background-color: transparent;
     transform: translateY(-2px);
+    border: 2px solid white;
 }
 
 .btn-secondary {
@@ -374,7 +375,7 @@ h1 {
 }
 
 .contact-form-card {
-    background: white;
+    background: #fafbfd;
 }
 
 .contact-info-quick {
@@ -397,6 +398,12 @@ h1 {
     color: #222;
 }
 
+.contact-card p {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+}
 .contact-sub {
     color: #888;
     font-size: 1rem;

@@ -26,11 +26,11 @@
                 
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#" class="btn btn-secondary">View Our Work</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
                 </div>
             </main>
         </div>
-        <div class="overlay"></div>
+        <div class="overlay"><h6>V&G WEBWORKS</h6></div>
     </div>
 
     <section class="services">
@@ -88,7 +88,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2>Our Work</h2>
             <p class="section-description">Explore our recent projects and see how we help businesses succeed online</p>
@@ -217,10 +217,19 @@
                 <div class="contact-card contact-form-card">
                     <h3><span style="color:#4C9EFF;">&#9993;</span> Send us a message</h3>
                     <p class="contact-sub">Fill out the form and we'll respond within 24 hours</p>
-                    <form class="contact-form">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea rows="4" placeholder="Tell us about your project..." required></textarea>
+                    <form class="contact-form" action="https://formsubmit.co/vgwebworks2025@gmail.com" method="POST">
+                        <!-- Required fields with names so the form service can forward them -->
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+
+                        <!-- Prevent spam (optional): simple honeypot field -->
+                        <input type="text" name="_honey" style="display:none">
+
+                        <!-- Optional formsubmit.co settings -->
+                        <input type="hidden" name="_subject" value="New message from V&G WebWorks site">
+                        <input type="hidden" name="_captcha" value="false">
+
                         <button type="submit" class="btn btn-primary">Send Message <span style="font-size:1.1em;">&#9992;</span></button>
                     </form>
                 </div>
@@ -231,12 +240,12 @@
                         <h4>Response Time</h4>
                         <p>We typically respond within 24 hours</p>
                         <h4>Email</h4>
-                        <p>hello@vgwebworks.com</p>
+                        <p>vgwebworks2025@gmail.com</p>
                     </div>
                     <div class="quick-connect-section">
                         <h3><span style="color:#4C9EFF;">&#128172;</span> Quick Connect</h3>
                         <p class="contact-sub">Prefer instant messaging? Reach us on WhatsApp</p>
-                        <a href="https://wa.me/" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp <span style="font-size:1.1em;">&#128241;</span></a>
+                        <a href="https://wa.me/+2348061618862" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp <span style="font-size:1.1em;">&#128241;</span></a>
                     </div>
                 </div>
             </div>
